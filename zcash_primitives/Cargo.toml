@@ -19,13 +19,14 @@ all-features = true
 [dependencies]
 aes = "0.7"
 bitvec = "1"
-bip0039 = { version = "0.9", features = ["std", "all-languages"] }
+bip0039 = { version = "0.11.0", features = ["std", "all-languages"] }
 blake2b_simd = "1"
 blake2s_simd = "1"
 bls12_381 = "0.7"
 bs58 = { version = "0.4", features = ["check"], optional = true }
 byteorder = "1"
 chacha20poly1305 = "0.9"
+digest = "^0.10.7"
 equihash = { version = "0.2", path = "../components/equihash" }
 ff = "0.12"
 fpe = "0.5"
@@ -37,14 +38,14 @@ jubjub = "0.9"
 lazy_static = "1"
 memuse = "0.2"
 nonempty = "0.7"
-orchard = "0.2"
+orchard = "^0.2"
 proptest = { version = "1.0.0", optional = true }
 rand = "0.8"
 rand_core = "0.6"
 ripemd = { version = "0.1", optional = true }
 secp256k1 = { version = "0.21", optional = true }
 sha2 = "0.9"
-subtle = "2.2.3"
+subtle = "^2.2"
 zcash_encoding = { version = "0.1", path = "../components/zcash_encoding" }
 
 [dependencies.zcash_note_encryption]
